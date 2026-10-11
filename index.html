@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridoana Comprehensive School (Ridoana School Complex) — Atadeka, Ashaiman</title>
+    <meta name="description" content="Welcome to Ridoana Comprehensive School (Ridoana School Complex) located in Atadeka, Ashaiman, Greater Accra Region, Ghana. Discover our academic programmes, admissions, and student life.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#2456C5',      /* Primary Blue */
+                        brandPink: '#EC4899',      /* Vibrant Pink Accent */
+                        darkNavy: '#0F172A',      /* Deep Professional Background for dark mode */
+                        lightBg: '#F8FAFC',       /* Clean Light Background */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2456C5;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-lightBg text-slate-800 dark:bg-darkNavy dark:text-slate-100 font-sans antialiased selection:bg-brandPink selection:text-white transition-colors duration-300">
+
+    <!-- DEMO & PROPANEUR SALES BANNER -->
+    <div class="bg-gradient-to-r from-brandBlue to-brandPink text-white px-4 py-3 text-center text-xs sm:text-sm font-bold tracking-wide flex items-center justify-center gap-2 shadow-md">
+        <i class="fa-solid fa-laptop-code"></i>
+        <span>EXCLUSIVE SITE SHOWCASE: Built to attract parents, elevate public image, and boost admissions for Ridoana Comprehensive School (Ridoana School Complex).</span>
+    </div>
+
+    <!-- TOP INFORMATION BAR -->
+    <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2.5 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brandPink"></i> Atadeka, Ashaiman, Greater Accra, Ghana</span>
+                <a href="tel:0205712404" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-phone text-brandPink"></i> 0205712404</a>
+                <a href="mailto:enquiries@ridoanaschool.edu.gh" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-envelope text-brandPink"></i> enquiries@ridoanaschool.edu.gh</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="hidden md:inline bg-brandBlue/30 text-sky-200 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider border border-brandBlue/40">Comprehensive Education</span>
+                <a href="#announcements" class="text-white hover:text-brandPink transition flex items-center gap-1 font-medium">
+                    <i class="fa-solid fa-bullhorn text-brandPink"></i> Announcements
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 dark:bg-darkNavy/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & School Name -->
+                <a href="#hero" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brandBlue to-brandPink flex items-center justify-center text-white font-heading font-black text-xl shadow-md group-hover:scale-105 transition">
+                        RC
+                    </div>
+                    <div>
+                        <span class="block font-heading font-extrabold text-base sm:text-xl text-slate-900 dark:text-white leading-tight tracking-tight">Ridoana Comprehensive</span>
+                        <span class="block text-xs text-brandPink font-bold tracking-wide">Atadeka, Ashaiman • School Complex</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#hero" class="text-sm font-semibold text-brandBlue dark:text-sky-400 transition hover:text-brandPink">Home</a>
+                    <a href="#about" class="text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:text-brandBlue">About Us</a>
+                    <a href="#academics" class="text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:text-brandBlue">Academics</a>
+                    <a href="#admissions" class="text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:text-brandBlue">Admissions</a>
+                    <a href="#student-life" class="text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:text-brandBlue">Student Life</a>
+                    <a href="#parent-info" class="text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:text-brandBlue">Parents</a>
+                    <a href="#announcements" class="text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:text-brandBlue">News</a>
+                    <a href="#contact" class="text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:text-brandBlue">Contact</a>
+                </nav>
+
+                <!-- Actions: CTA & Dark/Light Toggle -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <button id="themeToggleDesktop" aria-label="Toggle theme" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                        <i id="themeIconDesktop" class="fa-solid fa-moon"></i>
+                    </button>
+                    <a href="#admissions" class="bg-brandBlue hover:bg-blue-700 text-white font-heading font-bold text-sm px-6 py-3 rounded-xl shadow-lg shadow-brandBlue/25 transition transform hover:-translate-y-0.5">
+                        Apply for Admission
+                    </a>
+                </div>
+
+                <!-- Mobile Header Right Actions -->
+                <div class="flex items-center gap-2 lg:hidden">
+                    <button id="themeToggleMobile" aria-label="Toggle theme" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center">
+                        <i id="themeIconMobile" class="fa-solid fa-moon"></i>
+                    </button>
+                    <button id="mobileMenuBtn" aria-label="Toggle menu" class="relative z-50 w-11 h-11 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-brandBlue dark:text-brandPink hover:bg-slate-200 transition focus:outline-none">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white dark:bg-darkNavy border-b border-slate-200 dark:border-slate-800 px-6 pt-4 pb-6 space-y-3 shadow-2xl w-full absolute top-20 left-0 z-40 transition-all duration-300">
+            <a href="#hero" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-brandBlue transition">Home</a>
+            <a href="#about" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-brandBlue transition">About Us</a>
+            <a href="#academics" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-brandBlue transition">Academics</a>
+            <a href="#admissions" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-brandBlue transition">Admissions</a>
+            <a href="#student-life" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-brandBlue transition">Student Life</a>
+            <a href="#parent-info" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-brandBlue transition">Parent Information</a>
+            <a href="#announcements" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-brandBlue transition">News and Events</a>
+            <a href="#contact" class="mobile-link block px-4 py-2.5 rounded-xl text-base font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-brandBlue transition">Contact</a>
+            <div class="pt-3">
+                <a href="#admissions" class="mobile-link block w-full text-center bg-brandBlue text-white font-heading font-bold py-3.5 rounded-xl shadow-md">
+                    Apply for Admission
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative bg-gradient-to-br from-slate-100 via-white to-sky-50/50 dark:from-slate-900 dark:via-darkNavy dark:to-slate-900 py-20 lg:py-32 overflow-hidden transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brandBlue/10 dark:bg-brandBlue/20 text-brandBlue dark:text-sky-300 px-4 py-2 rounded-full text-xs sm:text-sm font-bold tracking-wide border border-brandBlue/20">
+                        <i class="fa-solid fa-award text-brandPink"></i> Atadeka, Ashaiman, Greater Accra, Ghana
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.12]">
+                        Empowering Minds. <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue to-brandPink">Inspiring Excellence.</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
+                        Welcome to Ridoana Comprehensive School (Ridoana School Complex). We provide a disciplined, world-class learning atmosphere tailored to bring out the absolute best in every child in Atadeka, Ashaiman.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+                        <a href="#admissions" class="bg-brandBlue hover:bg-blue-700 text-white font-heading font-bold px-8 py-4 rounded-xl shadow-xl shadow-brandBlue/25 text-center transition flex items-center justify-center gap-2">
+                            <span>Explore Admissions</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#about" class="bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-900 dark:text-white border-2 border-slate-200 dark:border-slate-700 font-heading font-bold px-8 py-4 rounded-xl text-center transition shadow-sm">
+                            Discover Our School
+                        </a>
+                    </div>
+                    <div class="pt-8 border-t border-slate-200 dark:border-slate-800 grid grid-cols-3 gap-6">
+                        <div>
+                            <span class="block font-heading text-2xl sm:text-3xl font-black text-brandBlue dark:text-sky-400">Quality</span>
+                            <span class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Education</span>
+                        </div>
+                        <div>
+                            <span class="block font-heading text-2xl sm:text-3xl font-black text-brandPink">Moral</span>
+                            <span class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Discipline</span>
+                        </div>
+                        <div>
+                            <span class="block font-heading text-2xl sm:text-3xl font-black text-brandBlue dark:text-sky-400">Secure</span>
+                            <span class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Environment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-brandBlue/20 via-brandPink/20 to-brandBlue/10 rounded-3xl transform rotate-3 filter blur-sm"></div>
+                        <div class="relative bg-slate-900 rounded-3xl shadow-2xl overflow-hidden border-4 border-white dark:border-slate-800 aspect-[4/3] flex items-center justify-center">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent z-10 flex flex-col justify-end p-8 text-white">
+                                <span class="text-xs uppercase tracking-widest text-brandPink font-extrabold">Ridoana Campus</span>
+                                <h3 class="font-heading text-xl font-bold mt-1">Committed to Outstanding Results</h3>
+                                <p class="text-xs text-slate-300 mt-1">Atadeka, Ashaiman, Greater Accra Region, Ghana.</p>
+                            </div>
+                            <div class="text-slate-500 flex flex-col items-center gap-3">
+                                <i class="fa-solid fa-school text-7xl text-sky-400/80"></i>
+                                <span class="text-sm font-semibold text-slate-300 tracking-wide">Ridoana Comprehensive School</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHOOL INTRODUCTION -->
+    <section id="about" class="py-24 bg-white dark:bg-darkNavy transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-brandPink font-bold text-xs uppercase tracking-widest bg-brandPink/10 px-3 py-1 rounded-md">
+                        <span>Our Philosophy</span>
+                    </div>
+                    <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                        Building a Strong Foundation for <span class="text-brandBlue dark:text-sky-400">Lifelong Success</span>
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
+                        Ridoana Comprehensive School (often referred to as Ridoana School Complex) is a private educational institution located in Atadeka, Ashaiman in the Greater Accra Region of Ghana. We merge rigorous academic study with vital character training, ensuring children grow into confident, capable, and responsible citizens.
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Our dedicated faculty partners closely with parents to maintain a transparent, supportive, and stimulating atmosphere where learning thrives every single day.
+                    </p>
+                    <div class="pt-4">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-brandBlue dark:text-sky-400 font-heading font-bold hover:text-brandPink transition">
+                            <span>Speak with our administrative office</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-brandBlue/10 rounded-bl-full pointer-events-none"></div>
+                        <div class="w-14 h-14 rounded-2xl bg-brandBlue text-white flex items-center justify-center text-2xl font-bold shadow-md">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white">Our Mission</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">[INSERT SCHOOL MISSION STATEMENT OR EDITABLE PLACEHOLDER TEXT]</p>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4 relative overflow-hidden sm:mt-6">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-brandPink/10 rounded-bl-full pointer-events-none"></div>
+                        <div class="w-14 h-14 rounded-2xl bg-brandPink text-white flex items-center justify-center text-2xl font-bold shadow-md">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white">Our Vision</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">[INSERT SCHOOL VISION STATEMENT OR EDITABLE PLACEHOLDER TEXT]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACADEMICS SECTION -->
+    <section id="academics" class="py-24 bg-slate-50 dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandPink font-bold text-xs uppercase tracking-widest bg-brandPink/10 px-3 py-1 rounded-full">Academic Programmes</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Structured Stages for Every Age</h2>
+                <p class="text-slate-600 dark:text-slate-300">Discover our comprehensive curriculum tracks designed to meet national standards and child development milestones.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 bg-brandBlue/10 dark:bg-brandBlue/20 rounded-2xl flex items-center justify-center text-brandBlue dark:text-sky-400 text-2xl font-bold mb-6 group-hover:bg-brandBlue group-hover:text-white transition">
+                            <i class="fa-solid fa-child-reaching"></i>
+                        </div>
+                        <span class="text-xs uppercase tracking-wider text-brandPink font-extrabold">Early Years</span>
+                        <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mt-1 mb-3">Kindergarten & Nursery</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Nurturing young minds through creative play, phonics, number awareness, and positive social engagement.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between text-sm font-semibold">
+                        <span class="text-slate-800 dark:text-slate-200">Early Learning Foundation</span>
+                        <a href="#admissions" class="text-brandBlue dark:text-sky-400 hover:underline flex items-center gap-1">Enquire <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 bg-brandBlue/10 dark:bg-brandBlue/20 rounded-2xl flex items-center justify-center text-brandBlue dark:text-sky-400 text-2xl font-bold mb-6 group-hover:bg-brandBlue group-hover:text-white transition">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <span class="text-xs uppercase tracking-wider text-brandPink font-extrabold">Primary Education</span>
+                        <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mt-1 mb-3">Primary School</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Building core analytical thinking, literacy, numeracy, and science skills with attentive instructor mentorship.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between text-sm font-semibold">
+                        <span class="text-slate-800 dark:text-slate-200">Primary Classes</span>
+                        <a href="#admissions" class="text-brandBlue dark:text-sky-400 hover:underline flex items-center gap-1">Enquire <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-16 h-16 bg-brandBlue/10 dark:bg-brandBlue/20 rounded-2xl flex items-center justify-center text-brandBlue dark:text-sky-400 text-2xl font-bold mb-6 group-hover:bg-brandBlue group-hover:text-white transition">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="text-xs uppercase tracking-wider text-brandPink font-extrabold">Junior High</span>
+                        <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mt-1 mb-3">Junior High School</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Advanced academic preparation, disciplined study habits, and targeted support for basic education excellence.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between text-sm font-semibold">
+                        <span class="text-slate-800 dark:text-slate-200">JHS Track</span>
+                        <a href="#admissions" class="text-brandBlue dark:text-sky-400 hover:underline flex items-center gap-1">Enquire <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY PARENTS CHOOSE US -->
+    <section class="py-24 bg-white dark:bg-darkNavy transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandPink font-bold text-xs uppercase tracking-widest bg-brandPink/10 px-3 py-1 rounded-full">Core Strengths</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Why Parents Choose Ridoana Comprehensive</h2>
+                <p class="text-slate-600 dark:text-slate-300">We stand on verified pillars of academic quality, moral uprightness, and open communication.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brandBlue text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white">Quality Teaching</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Experienced educators committed to giving each student personal attention and academic guidance.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brandPink text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white">Character Development</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Strong institutional emphasis on discipline, respect, integrity, and positive social values.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brandBlue text-white flex items-center justify-center text-xl shadow-md">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 dark:text-white">Parent Communication</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">Transparent channels ensuring parents stay completely informed about student progress and events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMPUS & FACILITIES -->
+    <section class="py-24 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandPink font-bold text-xs uppercase tracking-widest bg-brandPink/10 px-3 py-1 rounded-full">Campus Environment</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">A Secure Space for Focused Learning</h2>
+                <p class="text-slate-600 dark:text-slate-300">Take a look at our clean and well-maintained school spaces dedicated to student growth.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700">
+                    <div class="h-52 bg-slate-800 flex items-center justify-center text-slate-400 text-sm font-medium">
+                        [Illustrative Classroom Image]
+                    </div>
+                    <div class="p-8 space-y-2">
+                        <h3 class="font-heading font-bold text-slate-900 dark:text-white text-xl">Modern Classrooms</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">Well-lit, ventilated learning environments that ensure comfort and optimal concentration.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700">
+                    <div class="h-52 bg-slate-800 flex items-center justify-center text-slate-400 text-sm font-medium">
+                        [Illustrative Library Image]
+                    </div>
+                    <div class="p-8 space-y-2">
+                        <h3 class="font-heading font-bold text-slate-900 dark:text-white text-xl">School Library</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">Stocked with approved textbooks and reading materials to cultivate independent study.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700">
+                    <div class="h-52 bg-slate-800 flex items-center justify-center text-slate-400 text-sm font-medium">
+                        [Illustrative Sports Ground Image]
+                    </div>
+                    <div class="p-8 space-y-2">
+                        <h3 class="font-heading font-bold text-slate-900 dark:text-white text-xl">Recreation Grounds</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">Safe outdoor spaces designed for sports, physical fitness, and student recreation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDENT LIFE -->
+    <section id="student-life" class="py-24 bg-white dark:bg-darkNavy transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brandPink font-bold text-xs uppercase tracking-widest bg-brandPink/10 px-3 py-1 rounded-full">Beyond Academics</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Developing Well-Rounded Individuals</h2>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Education at Ridoana Comprehensive School goes beyond textbooks. We encourage students to discover talents through sports, arts, and leadership roles.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-800 dark:text-slate-200 font-semibold">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brandBlue"></i> Inter-house sports competitions</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brandBlue"></i> Cultural dance, drama, and choir</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brandBlue"></i> Prefectship and student leadership</li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-7 bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 space-y-2">
+                            <i class="fa-solid fa-futbol text-brandBlue text-2xl"></i>
+                            <h4 class="font-heading font-bold text-slate-900 dark:text-white">Sports & Games</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-300">Building stamina, teamwork, and fair play.</p>
+                        </div>
+                        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 space-y-2">
+                            <i class="fa-solid fa-palette text-brandPink text-2xl"></i>
+                            <h4 class="font-heading font-bold text-slate-900 dark:text-white">Arts & Culture</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-300">Encouraging creative expression.</p>
+                        </div>
+                        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 space-y-2">
+                            <i class="fa-solid fa-users text-brandBlue text-2xl"></i>
+                            <h4 class="font-heading font-bold text-slate-900 dark:text-white">Clubs & Societies</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-300">Fostering specialized interests.</p>
+                        </div>
+                        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 space-y-2">
+                            <i class="fa-solid fa-award text-brandPink text-2xl"></i>
+                            <h4 class="font-heading font-bold text-slate-900 dark:text-white">Leadership</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-300">Empowering student initiative.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARENT INFORMATION -->
+    <section id="parent-info" class="py-24 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandPink font-bold text-xs uppercase tracking-widest bg-brandPink/10 px-3 py-1 rounded-full">Resources</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Parent Information Portal</h2>
+                <p class="text-slate-600 dark:text-slate-300">Quick access to essential documents, term calendars, and uniform standards.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-heading font-bold text-slate-900 dark:text-white text-lg">School Calendar</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">Key dates and term schedules.</p>
+                    </div>
+                    <i class="fa-solid fa-calendar-days text-3xl text-brandBlue"></i>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-heading font-bold text-slate-900 dark:text-white text-lg">Uniform Guidelines</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">Approved daily wear standards.</p>
+                    </div>
+                    <i class="fa-solid fa-shirt text-3xl text-brandPink"></i>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-heading font-bold text-slate-900 dark:text-white text-lg">School Policies</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">Discipline and safety rules.</p>
+                    </div>
+                    <i class="fa-solid fa-file-shield text-3xl text-brandBlue"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMISSIONS & FORM -->
+    <section id="admissions" class="py-24 bg-white dark:bg-darkNavy transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brandPink font-bold text-xs uppercase tracking-widest bg-brandPink/10 px-3 py-1 rounded-full">Admissions Open</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Your Child's Next Chapter Starts Here</h2>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        We welcome prospective parents to enquire about our admissions process. Fill out our quick enquiry form or contact our admissions office directly.
+                    </p>
+                    
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-7 h-7 rounded-full bg-brandBlue text-white flex items-center justify-center font-bold text-xs mt-0.5">1</div>
+                            <div>
+                                <h4 class="font-heading font-bold text-slate-900 dark:text-white text-sm">Submit Enquiry</h4>
+                                <p class="text-xs text-slate-600 dark:text-slate-300">Provide parent contact details and school level of interest.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-7 h-7 rounded-full bg-brandBlue text-white flex items-center justify-center font-bold text-xs mt-0.5">2</div>
+                            <div>
+                                <h4 class="font-heading font-bold text-slate-900 dark:text-white text-sm">Consultation & Visit</h4>
+                                <p class="text-xs text-slate-600 dark:text-slate-300">Our administration contacts you to discuss grade placement and tour the campus.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-7 h-7 rounded-full bg-brandBlue text-white flex items-center justify-center font-bold text-xs mt-0.5">3</div>
+                            <div>
+                                <h4 class="font-heading font-bold text-slate-900 dark:text-white text-sm">Enrollment</h4>
+                                <p class="text-xs text-slate-600 dark:text-slate-300">Complete formal registration and welcome your child to Ridoana Comprehensive School.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://wa.me/233205712404?text=Hello,%20I%20would%20like%20to%20make%20an%20admissions%20enquiry%20for%20Ridoana%20Comprehensive%20School%20(Atadeka,%20Ashaiman)." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold px-7 py-3.5 rounded-xl shadow-lg transition">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Enquire via WhatsApp (0205712404)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Admission Form -->
+                <div class="lg:col-span-6 bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 sm:p-10 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mb-2">Admission Enquiry Form</h3>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 mb-6">Complete this demonstration form to receive a prompt call back from our admissions desk.</p>
+                    
+                    <form id="admissionForm" class="space-y-4">
+                        <div>
+                            <label for="parentName" class="block text-xs font-bold text-slate-800 dark:text-slate-200 mb-1">Parent / Guardian Name *</label>
+                            <input type="text" id="parentName" required class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brandBlue transition" placeholder="e.g. Kwame Mensah">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-xs font-bold text-slate-800 dark:text-slate-200 mb-1">Telephone Number *</label>
+                            <input type="tel" id="phone" required class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brandBlue transition" placeholder="e.g. 024 000 0000">
+                        </div>
+                        <div>
+                            <label for="level" class="block text-xs font-bold text-slate-800 dark:text-slate-200 mb-1">Programme / School Level *</label>
+                            <select id="level" required class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brandBlue transition">
+                                <option value="">Select Level</option>
+                                <option value="Kindergarten">Kindergarten / Nursery</option>
+                                <option value="Primary">Primary Education</option>
+                                <option value="Junior High">Junior High School</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-xs font-bold text-slate-800 dark:text-slate-200 mb-1">Additional Message or Questions</label>
+                            <textarea id="message" rows="3" class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brandBlue transition" placeholder="Tell us about your child's grade level..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brandBlue hover:bg-blue-700 text-white font-heading font-bold py-3.5 rounded-xl shadow-lg shadow-brandBlue/20 transition">
+                            Submit Admission Enquiry
+                        </button>
+                        <p id="formSuccess" class="hidden text-xs text-emerald-600 dark:text-emerald-400 font-bold text-center mt-2">Enquiry received successfully! Our admissions office will reach out shortly.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS & ANNOUNCEMENTS -->
+    <section id="announcements" class="py-24 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brandPink font-bold text-xs uppercase tracking-widest bg-brandPink/10 px-3 py-1 rounded-full">Updates</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">News and Announcements</h2>
+                <p class="text-slate-600 dark:text-slate-300">Stay informed with the latest updates from around the school community.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-slate-800 flex items-center justify-center text-slate-400 text-xs">[Sample Announcement Image]</div>
+                        <div class="p-8 space-y-2">
+                            <span class="text-xs font-bold text-brandPink uppercase tracking-wider">Announcement</span>
+                            <h3 class="font-heading font-bold text-slate-900 dark:text-white text-xl">Resumption Date for the New Term</h3>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">Important information regarding reporting times and requirements for students.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-2">
+                        <span class="text-xs text-slate-400 font-medium">Published: [Insert Date]</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-slate-800 flex items-center justify-center text-slate-400 text-xs">[Sample Event Image]</div>
+                        <div class="p-8 space-y-2">
+                            <span class="text-xs font-bold text-brandPink uppercase tracking-wider">Event</span>
+                            <h3 class="font-heading font-bold text-slate-900 dark:text-white text-xl">Parent-Teacher Association Meeting</h3>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">All parents and guardians are cordially invited to discuss student progress and projects.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-2">
+                        <span class="text-xs text-slate-400 font-medium">Published: [Insert Date]</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-slate-800 flex items-center justify-center text-slate-400 text-xs">[Sample Notice Image]</div>
+                        <div class="p-8 space-y-2">
+                            <span class="text-xs font-bold text-brandPink uppercase tracking-wider">Notice</span>
+                            <h3 class="font-heading font-bold text-slate-900 dark:text-white text-xl">Inter-House Sports Competition Notice</h3>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">Get ready for an exciting day of athletic displays, track events, and house spirit.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-2">
+                        <span class="text-xs text-slate-400 font-medium">Published: [Insert Date]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-white dark:bg-darkNavy transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brandPink font-bold text-xs uppercase tracking-widest bg-brandPink/10 px-3 py-1 rounded-full">Get In Touch</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Contact Ridoana Comprehensive School</h2>
+                    <p class="text-slate-600 dark:text-slate-300">We welcome your questions, feedback, and visit inquiries.</p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandBlue/10 text-brandBlue dark:text-sky-400 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-semibold text-slate-400">Location</span>
+                                <span class="text-sm font-bold text-slate-900 dark:text-white">Atadeka, Ashaiman, Greater Accra, Ghana</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandBlue/10 text-brandBlue dark:text-sky-400 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-semibold text-slate-400">Telephone</span>
+                                <a href="tel:0205712404" class="text-sm font-bold text-slate-900 dark:text-white hover:text-brandBlue">0205712404</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandBlue/10 text-brandBlue dark:text-sky-400 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs font-semibold text-slate-400">Email</span>
+                                <a href="mailto:enquiries@ridoanaschool.edu.gh" class="text-sm font-bold text-slate-900 dark:text-white hover:text-brandBlue">enquiries@ridoanaschool.edu.gh</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-7 bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 sm:p-10 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-heading text-2xl font-bold text-slate-900 dark:text-white mb-4">Send Us a Message</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="contactName" class="block text-xs font-bold text-slate-800 dark:text-slate-200 mb-1">Your Name *</label>
+                                <input type="text" id="contactName" required class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brandBlue transition" placeholder="e.g. Ama Serwaa">
+                            </div>
+                            <div>
+                                <label for="contactEmail" class="block text-xs font-bold text-slate-800 dark:text-slate-200 mb-1">Your Email / Phone *</label>
+                                <input type="text" id="contactEmail" required class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brandBlue transition" placeholder="e.g. ama@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contactMsg" class="block text-xs font-bold text-slate-800 dark:text-slate-200 mb-1">Message *</label>
+                            <textarea id="contactMsg" rows="4" required class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brandBlue transition" placeholder="How can we assist you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brandBlue hover:bg-blue-700 text-white font-heading font-bold py-3.5 rounded-xl shadow-lg shadow-brandBlue/20 transition">
+                            Send Message
+                        </button>
+                        <p id="contactSuccess" class="hidden text-xs text-emerald-600 dark:text-emerald-400 font-bold text-center mt-2">Message sent successfully!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                <div class="space-y-4">
+                    <span class="block font-heading text-xl font-extrabold text-white tracking-tight">Ridoana Comprehensive</span>
+                    <p class="text-xs text-slate-400 leading-relaxed">Located in Atadeka, Ashaiman, Greater Accra Region, Ghana. Delivering premier education, moral discipline, and student success.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-bold text-sm mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-sky-400 transition">About Us</a></li>
+                        <li><a href="#academics" class="hover:text-sky-400 transition">Academics</a></li>
+                        <li><a href="#admissions" class="hover:text-sky-400 transition">Admissions</a></li>
+                        <li><a href="#student-life" class="hover:text-sky-400 transition">Student Life</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-bold text-sm mb-4">Parent Portal</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#parent-info" class="hover:text-sky-400 transition">School Calendar</a></li>
+                        <li><a href="#parent-info" class="hover:text-sky-400 transition">Uniform Guidelines</a></li>
+                        <li><a href="#parent-info" class="hover:text-sky-400 transition">School Policies</a></li>
+                        <li><a href="#announcements" class="hover:text-sky-400 transition">Announcements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-bold text-sm mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><i class="fa-solid fa-location-dot text-brandPink mr-2"></i> Atadeka, Ashaiman, Greater Accra</li>
+                        <li><i class="fa-solid fa-phone text-brandPink mr-2"></i> 0205712404</li>
+                        <li><i class="fa-solid fa-envelope text-brandPink mr-2"></i> enquiries@ridoanaschool.edu.gh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Ridoana Comprehensive School. All rights reserved. Demonstration Project.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/233205712404?text=Hello,%20I%20would%20like%20to%20inquire%20about%20Ridoana%20Comprehensive%20School%20(Atadeka,%20Ashaiman)." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300 group" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-16 bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-heading text-xs font-bold py-1.5 px-3 rounded-xl shadow-md opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none border border-slate-200 dark:border-slate-800">Chat with us (0205712404)</span>
+    </a>
+
+    <!-- JAVASCRIPT FOR ROBUST INTERACTIVITY (MOBILE MENU & DARK/LIGHT MODE) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Theme Toggle Logic
+            const htmlRoot = document.getElementById('htmlRoot');
+            const themeToggleDesktop = document.getElementById('themeToggleDesktop');
+            const themeToggleMobile = document.getElementById('themeToggleMobile');
+            const themeIconDesktop = document.getElementById('themeIconDesktop');
+            const themeIconMobile = document.getElementById('themeIconMobile');
+
+            function setTheme(isDark) {
+                if (isDark) {
+                    htmlRoot.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                    themeIconDesktop.className = 'fa-solid fa-sun';
+                    themeIconMobile.className = 'fa-solid fa-sun';
+                } else {
+                    htmlRoot.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                    themeIconDesktop.className = 'fa-solid fa-moon';
+                    themeIconMobile.className = 'fa-solid fa-moon';
+                }
+            }
+
+            // Check saved preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+
+            function toggleTheme() {
+                const isCurrentlyDark = htmlRoot.classList.contains('dark');
+                setTheme(!isCurrentlyDark);
+            }
+
+            if (themeToggleDesktop) themeToggleDesktop.addEventListener('click', toggleTheme);
+            if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
+
+            // Mobile Menu Toggle Logic
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function toggleMenu(forceClose = false) {
+                const isHidden = forceClose || !mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-xmark');
+                }
+            }
+
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleMenu();
+                });
+            }
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    toggleMenu(true);
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (mobileMenu && !mobileMenu.contains(e.target) && mobileMenuBtn && !mobileMenuBtn.contains(e.target)) {
+                    toggleMenu(true);
+                }
+            });
+
+            // Admission Form Handler (Demo simulation)
+            const admissionForm = document.getElementById('admissionForm');
+            const formSuccess = document.getElementById('formSuccess');
+
+            if (admissionForm) {
+                admissionForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    formSuccess.classList.remove('hidden');
+                    admissionForm.reset();
+                    setTimeout(() => {
+                        formSuccess.classList.add('hidden');
+                    }, 6000);
+                });
+            }
+
+            // Contact Form Handler (Demo simulation)
+            const contactForm = document.getElementById('contactForm');
+            const contactSuccess = document.getElementById('contactSuccess');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    contactSuccess.classList.remove('hidden');
+                    contactForm.reset();
+                    setTimeout(() => {
+                        contactSuccess.classList.add('hidden');
+                    }, 6000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
